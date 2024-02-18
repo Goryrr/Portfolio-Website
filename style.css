@@ -1,0 +1,313 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background: rgb(240, 240, 236);
+    /* background: rgb(23, 23, 23); */
+    margin-bottom: 50px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+
+}
+
+.navbar li a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #222;
+
+}
+
+/* ???? */
+/* .PageMenu-bg {
+    position: absolute;
+    background-color: #222;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    transition: height .7s cubic-bezier(.52,.08,.18,1),background-color .7s cubic-bezier(.52,.08,.18,1),-webkit-transform .8s cubic-bezier(.3,.3,.12,1) .1s;
+    transition: transform .8s cubic-bezier(.3,.3,.12,1) .1s,height .7s cubic-bezier(.52,.08,.18,1),background-color .7s cubic-bezier(.52,.08,.18,1);
+    transition: transform .8s cubic-bezier(.3,.3,.12,1) .1s,height .7s cubic-bezier(.52,.08,.18,1),background-color .7s cubic-bezier(.52,.08,.18,1),-webkit-transform .8s cubic-bezier(.3,.3,.12,1) .1s;
+    overflow: hidden
+} */
+
+/* About - Entry  */
+#mypic {
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.06); */
+    height: 420px;
+    border-radius: 30px;
+    
+}
+
+.wertical_line {
+    /* height: 1px; */
+    width: 1.5px;
+    height: 500px;
+    background: #222;
+}
+
+.about-entry {
+    display: flex;
+    padding: 0 150px 0 150px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.about-entry h1 {
+    text-align: right;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+.about-entry h2 {
+    text-align: right;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 6px;
+    margin-bottom: 40px;
+}
+
+.aboutme_textbox {
+    /* background-color: antiquewhite; */
+    width: 60%;
+}
+
+.techstack-container {
+    padding: 20px 150px 20px 150px;
+}
+.techstack-container p {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.tech-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0 0;
+    
+}
+
+.tech-element img{
+    height: 60px;
+    width: 60px;
+}
+
+.techstack-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 1px;
+    background: #222;
+}
+
+#project-container img{
+    width: 600px;
+
+}
+
+/* projectCard */
+
+.project-link{
+text-decoration: none;
+}
+
+
+.projectCard  {
+    display: flex;
+    margin: 100px;
+    border: 1px #222 solid;
+    border-radius: 20px;
+    color: #222;
+}
+
+.projectCard-img img {
+    width: 600px;
+    padding: 20px;
+}
+
+.projectCard-Text {
+}
+
+.projectCard-Text h2{
+    text-align: center;
+    padding: 40px;
+}
+
+.projectCard-Text p {
+    padding: 30px;
+    text-decoration: none;
+}
+
+
+/* slider gpt */
+
+
+/* .slider img {
+    width: 1000px;
+} */
+
+
+/* .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .thumbnails-container {
+    margin-top: 20px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 70px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+
+
+/* slider LunaDev */
+
+/* .slider img {
+    width: 900px;
+} */
+
+.slider {
+    width: 800px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.list img {
+    width: 800px;
+    max-width: 100vw;
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* troche to psuje bo sie naklada */
+}
+
+.sliderButtons {
+    position: relative;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderButtons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: rgba(70, 69, 69, 0.2);
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #222;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #222;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active {
+    width: 30px;
+}
+
+@media screen and (max-width:768px){
+    .slider{
+        height: 400px;
+    }
+}
