@@ -262,7 +262,7 @@ const generateProjectPages =
      
     });
     
-    initializeSlider();
+    
 
 const projectContainer = document.querySelector("#project-container");
 
@@ -302,6 +302,7 @@ const renderProjects = (items) => {
 
 const openProjectPage = (projectId) => {
     document.documentElement.innerHTML = projectPages[projectId];
+    initializeSlider();
 };
 
 // document.onload = function () {
