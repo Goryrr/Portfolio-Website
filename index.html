@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
 <header>
@@ -19,7 +20,7 @@
 </header>
 
 <div class="about-entry">
-    <div class="aboutme_textbox">
+    <div class="aboutme_textbox hidden">
         <h1>Architekt, Urbanista</h1>
         <h2>Jakub Sokołowski</h2>
         </p>
@@ -29,36 +30,116 @@
     <img id="mypic" src="./img/about/CV_winieta_crop.jpg" alt="">
 </div>
 
+<div class="experience-header">
+    <h2>Doświadczenie</h2>
+</div>
+
 <div class="techstack-line"></div>
 
+
+<div class="experience-box">
+    <ul class="exp-ul">
+        <div class="exp hidden">
+            <li class="exp-li">
+                <div class="year exp-around">
+                    <span>Asystent Architekta</span>
+                    <p>Biuro Projektowe ProHouse</p>
+                    <p>maj 2023 - <span>obecnie</span></p>
+                </div>
+                <div class="middle-exp-section">
+                    <span class="exp-middle-line"></span>
+                    <span>O</span>
+                    <span class="exp-middle-line"></span>
+                </div>
+                <div class="exp-description exp-around">
+                    <ul class="job-description">
+                        <li>Opracowywanie projektów architektoniczno-budowlanych na każdym etapie projektowym, od koncepcji, przez projekty do pozwolenia na budowę, po projekty techniczne (obiekty jednorodzinne, wielorodzinne, usługowe, inwentarskie),</li>
+                        <li>Opracowywanie opisów technicznych,</li>
+                        <li>Tworzenie wizualizacji,</li>
+                        <li>Wykonywanie i opracowywanie inwentaryzacji</li>
+                    </ul>
+                </div>
+            </li>
+        </div>
+        <div class="exp hidden">
+             <li class="exp-li">
+                <div class="exp-description exp-around">
+                    <ul class="job-description x">
+                        <li>tworzenie analiz przedprojektowych</li>
+                        <li>tworzenie projektów organizacji ruchu</li>
+                        <li>rysowanie przekrojów, szczegółów konstrukcyjnych i innych elementów rysunków do projektów budowlanych</li>
+                        <li>przygotowywanie analiz i prognoz ruchu</li>
+                        <li>przygotowywanie specyfikacji technicznych</li>
+                        <li>sporządzenie przedmiarów robót</li>
+                        <li>udział w przygotowywaniu opisów technicznych</li>
+                    </ul>
+                </div>
+                <div class="middle-exp-section">
+                    <span class="exp-middle-line"></span>
+                    <span>O</span>
+                    <span class="exp-middle-line"></span>
+                </div>
+                <div class="year exp-around">
+                    <span>Asystent Projektanta</span>
+                    <p>Wrocławskie Biuro Projektów DROSYSTEM Sp. z o.o.</p>
+                    <p>styczeń 2021 - wrzesień 2021,</p>
+                    <p>lipiec 2020 - wrzesień 2020 - staż</p>
+                </div>
+            </li>
+         </div>
+         <div class="exp hidden">
+            <li class="exp-li">
+                <div class="year exp-around">
+                    <span>Asystent Geodety</span>
+                    <p>GEO-LIT Przemysław Przerywacz</p>
+                    <p>listopad 2020 - styczeń 2021</p>
+                </div>
+                <div class="middle-exp-section">
+                    <span class="exp-middle-line"></span>
+                    <span>O</span>
+                    <span class="exp-middle-line"></span>
+                </div>
+                <div class="exp-description exp-around">
+                    <ul class="job-description">
+                        <li>wykonywanie pomiarów tachimetrem</li>
+                        <li>wykonywanie pomiarów odbiornikiem GPS</li>
+                        <li>obsługa niwelatora</li>
+                    </ul>
+                </div>
+            </li>
+        </div>
+    </ul>
+</div>
+
+<div class="techstack-line"></div>
 <div class="techstack-container">
-    <p>Technologie w których pracuję:</p>
+    <p class="techstack-header">Technologie w których pracuję:</p>
     <div class="tech-icons">
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="archicad" src="img/svg/archicad-svgrepo-com.svg" alt="">
             <p>ArchiCad</p>
         </div>
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="autocad" src="img/svg/autodesk-svgrepo-com.svg" alt="">
             <p>AutoCad</p>
         </div>
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="microstation" src="img/svg/microstation2.svg" alt="">
             <p>Microstation</p>
         </div>
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="qgis" src="img/svg/qgis-svgrepo-com.svg" alt="">
             <p>QGis</p>
         </div>
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="photoshop" src="img/svg/photoshop-svgrepo-com.svg" alt="">
             <p>Photoshop</p>
         </div>
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="twinmotion" src="img/svg/twinmotion-icon.svg" alt="">
             <p>Twinmotion</p>
         </div>
-        <div class="tech-element">
+        <div class="tech-element hidden">
             <img id="office" src="img/svg/microsoft-office-svgrepo-com.svg" alt="">
             <p>Mircosoft Office</p>
         </div>
@@ -67,7 +148,7 @@
 
 <div class="techstack-line"></div>
 
-    <div id="project-container"></div>
+<div id="project-container"></div>
 
 <script src="projects.js"></script>
 <script src="script.js"></script>

@@ -10,7 +10,36 @@
     box-sizing: border-box;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
 
+.hidden:nth-of-type(even){
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    overflow: hidden;
+}
+
+.show:nth-of-type(even){
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* @media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+} */
 
 /* Header  */
 header {
@@ -107,10 +136,17 @@ header a {
 .techstack-container {
     padding: 20px 150px 20px 150px;
 }
-.techstack-container p {
+
+.techstack-header{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 20px 0 20px 0;
+}
+.tech-element p {
     font-weight: 400;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 20px;
 
 }
@@ -120,12 +156,26 @@ header a {
     justify-content: space-between;
     align-items: center;
     padding: 30px 0 0 0;
-    
 }
 
+.tech-element:nth-child(2){transition-delay: 100ms;}
+.tech-element:nth-child(3){transition-delay: 200ms;}
+.tech-element:nth-child(4){transition-delay: 300ms;}
+.tech-element:nth-child(5){transition-delay: 400ms;}
+.tech-element:nth-child(6){transition-delay: 500ms;}
+.tech-element:nth-child(7){transition-delay: 600ms;}
+
+
+.tech-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .tech-element img{
     height: 60px;
     width: 60px;
+    padding: 0 0 15px 0;
 }
 
 .techstack-line {
@@ -267,6 +317,7 @@ text-decoration: none;
     left: 5%;
     width: 90%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -311,3 +362,82 @@ text-decoration: none;
         height: 400px;
     }
 }
+
+
+/* Exp section */
+
+.experience-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.experience-header h2{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+
+
+.experience-box {
+    overflow: hidden;
+
+}
+
+.exp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-width: 300px; */
+}
+
+.middle-exp-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-middle-line{
+    width: 2px;
+    height: 40px;
+    background-color: #222;
+}
+
+.exp-ul{
+    display: flex;
+    flex-direction: column;
+}
+.exp-li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-around{
+    padding: 40px;
+    flex: 1 1  0%;
+}
+
+.job-description {
+    max-width: 600px;
+}
+
+.job-description li{
+    font-size: 14px;
+    padding: 5px;
+}
+
+.year span{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.year p{
+    padding: 5px;
+}
+
+
+
